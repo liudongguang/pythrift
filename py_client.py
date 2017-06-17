@@ -14,7 +14,7 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 try:
-    tSocket=TSocket.TSocket('localhost',8899)
+    tSocket=TSocket.TSocket('127.0.0.1',8899)
     tSocket.setTimeout(600)
 
     transport=TTransport.TFramedTransport(tSocket)

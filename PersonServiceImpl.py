@@ -4,7 +4,7 @@ __auther__='刘东光'
 from py.thrift.generated import ttypes
 
 class PersonServiceImpl:
-    def getPersonByUsername(self,username):
+    def getPersionByUsername(self,username):
         print "got client parm:"+username
         person=ttypes.Persion()
         person.username=username
@@ -12,7 +12,7 @@ class PersonServiceImpl:
         person.married=False
         return person
 
-    def savePerson(self,person):
+    def savePersion(self,person):
         print 'got client param:'
         print person.username
         print person.age
